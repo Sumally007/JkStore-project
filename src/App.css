@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/* Nav-Bar section */
+
 .nav-bar {
   width: 90%;
   margin: 10px 5%;
@@ -47,8 +49,53 @@
   border: none;
   cursor: pointer;
   font-size: 20px;
-
   font-weight: 700;
-
   color: #56423C;
+}
+
+/* Hero Section */
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+  padding: 50px 10%;
+  box-sizing: border-box;
+}
+
+.hero-text-content {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.hero-title {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #5D3A2E;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #7B5C51;
+  line-height: 1.6;
+}
+
+.hero-image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
