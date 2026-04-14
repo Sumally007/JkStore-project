@@ -53,6 +53,11 @@
   color: #56423C;
 }
 
+.btn:hover {
+  background-color: #5D3A2E;
+  color: #fff;
+}
+
 /* Hero Section */
 
 .hero-container {
@@ -175,4 +180,77 @@
   font-size: 26px;
   font-style: light;
   color: #56423C;
+}
+
+/* About section */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  /* Inaweka text na picha katikati wima */
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 50px;
+  /* Nafasi kati ya picha na text */
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  /* Unaweza kuongeza opacity kama pattern ni kali sana */
+  opacity: 0.8;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-title {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #5D3A2E;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  /* Bold kiasi kwa sentensi ya kwanza */
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.about-subtext {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-btn {
+  padding: 12px 30px;
+  background-color: #FFE6D7;
+  /* Rangi hafifu kama kwenye Figma */
+  color: #5D3A2E;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #5D3A2E;
+  color: #fff;
 }
