@@ -1,6 +1,10 @@
 import React from 'react'
 import NavBar from './NavBar'
 import logo from "../assets/images/footerLogo.png";
+import List from './List';
+import ListData from './ListData';
+import Button from './Button';
+// className='footer-btn'
 
 const Footer = () => {
     return (
@@ -10,13 +14,12 @@ const Footer = () => {
             </div>
 
             <ul className='footer-list'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Product</li>
-                <li>Categories</li>
+                {ListData.map((item) => (
+                    <List key={item.id} item={item} />
+                ))}
             </ul>
 
-            <button className='footer-btn'>Contact</button>
+            <Button className='footer-btn' />
         </footer>
     )
 }

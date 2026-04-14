@@ -1,7 +1,11 @@
 import React from 'react'
 import logo from "../assets/images/logo.png";
+import List from './List';
+import ListData from './ListData';
+import Button from './Button';
 
 const NavBar = () => {
+
     return (
         <nav className='nav-bar'>
             <div className='logo'>
@@ -9,15 +13,16 @@ const NavBar = () => {
             </div>
 
             <ul className='nav-list'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Product</li>
-                <li>Categories</li>
+                {ListData.map((item) => (
+                    <List key={item.id} item={item} />
+                ))}
             </ul>
 
-            <button className='btn'>Contact</button>
+            <Button />
         </nav>
     )
 }
+
+
 
 export default NavBar;

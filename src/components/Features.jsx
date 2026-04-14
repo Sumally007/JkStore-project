@@ -5,27 +5,30 @@ import customerCare from "../assets/icons/operator-customer-service-svgrepo-com 
 import payment from "../assets/icons/secure-payment-svgrepo-com 1.svg"
 
 const Features = () => {
+    const FeaturesData = [
+        { id: 1, title: "Monery Back Guarantee", image: moneyIcon },
+        { id: 2, title: "Free Shipping", image: Shipping },
+        { id: 3, title: "24/7 Customer Support", image: customerCare },
+        { id: 4, title: "Secure Payment", image: payment }
+    ]
+
     return (
         <section className='feature-container'>
             <div className="feature-contents">
-                <div className='feature-content'>
-                    <img className='icon' src={moneyIcon} alt="the money icon" />
-                    <p className='name'>Monery Back Guarantee</p>
-                </div>
-                <div className='feature-content'>
-                    <img className='icon' src={Shipping} alt="the Shipping icon" />
-                    <p className='name'>Free Shipping</p>
-                </div>
-                <div className='feature-content'>
-                    <img className='icon' src={customerCare} alt="the customerCare icon" />
-                    <p className='name'>24/7 Customer Support</p>
-                </div>
-                <div className='feature-content'>
-                    <img className='icon' src={payment} alt="the payment icon" />
-                    <p className='name'>Secure Payment</p>
-                </div>
+                {FeaturesData.map((item) => (
+                    <FeaturesIcons key={item.id} item={item} />
+                ))}
             </div>
         </section>
+    )
+}
+
+const FeaturesIcons = ({ item }) => {
+    return (
+        <div className='feature-content'>
+            <img className='icon' src={item.image} alt={item.image} />
+            <p className='name'>{item.title}</p>
+        </div>
     )
 }
 

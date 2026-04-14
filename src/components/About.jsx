@@ -1,5 +1,7 @@
 import React from 'react'
 import patternImage from "../assets/images/Rectangle 19.png"
+import Button from './Button';
+// className="about-btn"
 
 const About = () => {
     return (
@@ -18,7 +20,7 @@ const About = () => {
                     JK Store provides Tanzanian women with high-quality modest clothes
                     at an affordable price. All our clothes selections are sourced from Turkey.
                 </p>
-                <button className="about-btn">Contact Us</button>
+                <Button className="about-btn" />
             </div>
         </section>
     )
