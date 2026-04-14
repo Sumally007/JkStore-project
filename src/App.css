@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("src/assets/images/bodyBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Nav-Bar section */
 
 .nav-bar {
@@ -287,7 +293,6 @@
 }
 
 .category-card {
-  background: #fff;
   transition: transform 0.3s ease;
   cursor: pointer;
   text-align: center;
@@ -301,7 +306,6 @@
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
-  background-color: #f9f9f9;
 }
 
 .card-image-wrapper img {
