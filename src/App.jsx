@@ -9,6 +9,7 @@ import Categories from './components/Categories';
 import Testimonials from './components/Testimonials';
 import Partners from './components/Partners';
 import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 const App = () => {
   return (<>
@@ -21,6 +22,7 @@ const App = () => {
     <Testimonials />
     <Partners />
     <ContactForm />
+    <Footer />
   </>
   )
 }

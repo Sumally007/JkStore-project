@@ -51,6 +51,7 @@
   font-size: 20px;
   font-weight: 700;
   color: #56423C;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -405,8 +406,8 @@
   background-color: #A05D47;
 }
 
-/* Partners Section */
 
+/* Partners Section */
 .partners-section {
   padding: 40px 10%;
   background-color: transparent;
@@ -432,8 +433,8 @@
 
 }
 
-/* ContanctForm section */
 
+/* ContanctForm section */
 .contact-section {
   margin: 0 10% 80px 10%;
   display: flex;
@@ -446,7 +447,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 1239px;
+  width: 100%;
   height: 561px;
 }
 
@@ -520,4 +521,45 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Footer section */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 10%;
+  background-color: transparent;
+  color: #A05D47;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  width: 451px;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+
+.footer-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: #56423C;
+  transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: #5D3A2E;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
 }
