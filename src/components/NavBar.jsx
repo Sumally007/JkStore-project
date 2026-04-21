@@ -12,6 +12,12 @@ const NavBar = () => {
                 <img src={logo} alt="the logo" />
             </div>
 
+            {/* <div className='menu'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> */}
+
             <ul className='nav-list'>
                 {ListData.map((item) => (
                     <List key={item.id} item={item} />
