@@ -19,13 +19,14 @@ const NavBar = () => {
                 <span></span>
             </div>
 
-            <ul className={menuOpen ? "open" : ""}>
+            <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
                 {ListData.map((item) => (
                     <List key={item.id} item={item} />
                 ))}
+                <Button />
             </ul>
 
-            <Button />
+
         </nav>
     )
 }
