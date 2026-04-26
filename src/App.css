@@ -663,6 +663,10 @@ body {
   margin: 0 10% 80px 10%;
   display: flex;
   justify-content: center;
+
+  @media (max-width:480px) {
+    margin: 40px 5% 80px 5%;
+  }
 }
 
 .contact-card {
@@ -688,6 +692,8 @@ body {
 
   @media (max-width:480px) {
     flex-wrap: wrap;
+    color: #FFF;
+    padding: 25px;
   }
 }
 
@@ -697,12 +703,21 @@ body {
   font-style: bold;
   margin-bottom: 20px;
 
+  @media (max-width:480px) {
+    font-size: 26px;
+  }
+
 }
 
 .contact-info p {
   font-size: 26px;
   font-weight: 400;
   margin-bottom: 50px;
+
+  @media (max-width:480px) {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
 }
 
 
@@ -713,6 +728,7 @@ body {
 
   @media (max-width:480px) {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -726,6 +742,11 @@ body {
   outline: none;
   font-size: 26px;
   color: #A05D47;
+
+  @media (max-width:480px) {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 .whatsapp-form button {
@@ -739,6 +760,11 @@ body {
   cursor: pointer;
   transition: 0.3s;
   font-size: 26px;
+
+  @media (max-width:480px) {
+    font-size: 16px;
+
+  }
 }
 
 .whatsapp-form button:hover {
